@@ -126,7 +126,6 @@ def get_all_games():
             n = item.find("hours_forever") + 16
             item = item[n::]
             hours.append(item[:item.find('last_played') - 3:])
-            print(hours[i].replace(',', ''))
             total_hours += float(hours[i].replace(',', ''))
         else:
             try:
